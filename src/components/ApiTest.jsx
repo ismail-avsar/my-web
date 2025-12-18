@@ -5,7 +5,7 @@ function ApiTest() {
     const sendPost = async () => {
         try {
             const response = await axios.post(
-                " https://reqres.in/api/workintech",
+                "https://reqres.in/api/workintech",
                 postData
             );
 
