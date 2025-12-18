@@ -1,5 +1,4 @@
 function Profile({ profileData }) {
-    if (!profileData) return null;
 
     return (
         <section id="profile">
