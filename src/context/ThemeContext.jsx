@@ -7,7 +7,7 @@ export function ThemeProvider({ children }) {
     const [theme, setTheme] = useLocalStorage("theme", "light");
 
     useEffect(() => {
-        document.body.classList.remove("light", "dark");
+        document.body.className = "";
         document.body.classList.add(theme);
     }, [theme]);
 

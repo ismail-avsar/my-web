@@ -29,9 +29,14 @@ function Header() {
             <nav>
                 <ul>
                     {content[language].header.links.map((link, index) => (
-                        <li key={index}>{link.name}</li>
+                        <li key={index}>
+                            <a href={`#${link.id}`}>
+                                {link.name}
+                            </a>
+                        </li>
                     ))}
                 </ul>
+
             </nav>
 
             {/* Actions */}

@@ -7,18 +7,19 @@ import Hero from "./Hero";
 import Skills from "./Skills";
 import Profile from "./Profile";
 import Projects from "./Projects";
+import ApiTest from "./ApiTest";
 
 function Layout() {
     const { language } = useContext(LanguageContext);
 
     return (
-        <div className="">
+        <div>
             <Header />
             <Hero heroData={content[language].hero} />
             <Skills skills={content[language].skills} />
-            <Profile profileData={content[language].profile} />
             <Projects projectsData={content[language].projects} />
-
+            <Profile profileData={content[language].profile} />
+            <ApiTest />
         </div>
     );
 }

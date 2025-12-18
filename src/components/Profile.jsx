@@ -2,10 +2,8 @@ function Profile({ profileData }) {
     if (!profileData) return null;
 
     return (
-        <section
-            id=""
-            className=""
-        >
+        <section id="profile">
+
             <h2 className="">
                 {profileData.title}
             </h2>
