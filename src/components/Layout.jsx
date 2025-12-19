@@ -13,7 +13,7 @@ function Layout() {
     const { language } = useContext(LanguageContext);
 
     return (
-        <div>
+        <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
             <Header />
             <Hero heroData={content[language].hero} />
             <Skills skills={content[language].skills} />
