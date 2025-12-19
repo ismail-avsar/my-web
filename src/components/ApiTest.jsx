@@ -5,11 +5,12 @@ function ApiTest() {
     const sendPost = async () => {
         try {
             const response = await axios.post(
-                "https://reqres.in/api/workintech",
+                "https://reqres.in/api/users",
                 postData
             );
 
-            console.log("POST RESPONSE:", response.data);
+            console.log("POST SUCCESS:", response.data);
+            alert("POST isteği gönderildi (console'u kontrol et)");
         } catch (error) {
             console.error("POST ERROR:", error);
         }
