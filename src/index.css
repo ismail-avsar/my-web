@@ -1,33 +1,22 @@
 @import "tailwindcss";
 
 @layer base {
-  :root {
-    --brand-main: #4731d3;
-    --dark-bg: #252128;
-  }
-
   body {
-    @apply transition-colors duration-300;
-    font-family: ui-sans-serif, system-ui, sans-serif;
+    @apply transition-colors duration-300 antialiased;
     margin: 0;
+    font-family: ui-sans-serif, system-ui, sans-serif;
   }
   
   body.light {
-    background-color: #ffffff;
-    color: #1f2937; /* Koyu gri/siyah yazı */
+    @apply bg-white text-gray-900;
   }
   
   body.dark {
-    background-color: #252128;
-    color: #f3f4f6; /* Beyazımsı yazı */
+    @apply bg-[#252128] text-gray-100;
   }
 }
 
-/* API butonu için garantili görünürlük sınıfları */
-.api-btn-fixed {
-  background-color: #4731d3 !important;
-  color: white !important;
-  display: inline-block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
+/* API Butonu ve Başlık Renkleri İçin Kesin Sınıflar */
+.text-brand-main { color: #4731d3 !important; }
+.dark .text-brand-main { color: #b7abff !important; }
+.bg-brand-main { background-color: #4731d3 !important; }

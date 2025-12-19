@@ -14,7 +14,6 @@ function Projects({ projectsData }) {
                                 alt={project.title}
                             />
                         </div>
-                        {/* Burada h3 rengini netleştirdik */}
                         <h3 className="text-2xl font-bold text-[#4731d3] dark:text-[#b7abff] mb-3">
                             {project.title}
                         </h3>

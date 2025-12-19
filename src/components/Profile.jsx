@@ -4,7 +4,6 @@ function Profile({ profileData }) {
             <h2 className="text-4xl font-bold mb-12">{profileData.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div className="space-y-6">
-                    {/* !important etkisi için style ekledik veya net renk sınıfı */}
                     <h3 className="text-2xl font-bold mb-6 text-[#4731d3] dark:text-[#b7abff]">
                         {profileData.infoTitle}
                     </h3>
